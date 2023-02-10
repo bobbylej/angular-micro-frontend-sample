@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FirstComponent } from 'projects/remote-app/src/app/inner/first/first.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: FirstComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
